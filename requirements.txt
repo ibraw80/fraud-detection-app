@@ -1,3 +1,6 @@
-streamlit
-pandas
-scikit-learn
+st.title("🛡️ Fraud, AML & Compliance Analytics Prototype")
+st.caption("Demo on 10,000 synthetic transactions. Amounts in SAR.")
+
+# بعد df = pd.DataFrame(data)
+df['newbalanceOrig'] = (df['oldbalanceOrg'] - df['amount']).clip(lower=0)
+
